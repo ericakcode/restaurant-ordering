@@ -34,28 +34,43 @@ body {
   font-size: 22px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .food-img {
-  width: 100px;
+  width: 80px;
+  margin-right: 32px;
 }
 
 .food {
-  margin: 45px;
-  padding: 20px;
   display: flex;
-  border-bottom: 1px solid #333;
-  width: 80%;
+  border-bottom: 1px solid lightgray;
+  width: 85%;
+  height: 200px;
 }
 
 .addBtn {
   border-radius: 50%;
-  border: 1px solid #666;
+  border: 1px solid #999;
+  background-color: #fff;
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.addBtn:hover,
+.addBtn:active {
+  transform: scale(0.95);
 }
 
 .food-title {
   font-size: 30px;
+  font-weight: 500;
 }
 
 .food-ingredients {
@@ -63,5 +78,14 @@ body {
 }
 
 .food-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
   flex: 2;
+}
+
+.btn {
+  align-self: center;
 }
