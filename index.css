@@ -12,6 +12,8 @@ body {
   height: 100vh;
 }
 
+/* HEADER SECTION */
+
 .restaurant {
   color: #fff;
   display: flex;
@@ -34,6 +36,8 @@ body {
   font-size: 22px;
 }
 
+/* MENU SECTION */
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -55,7 +59,7 @@ body {
 
 .addBtn {
   border-radius: 50%;
-  border: 1px solid #999;
+  border: 1px solid lightgray;
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -88,4 +92,72 @@ body {
 
 .btn {
   align-self: center;
+}
+
+/* ORDER SECTION */
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.orderTitle {
+  text-align: center;
+  font-size: 28px;
+  margin: 45px 0 65px 0;
+  font-weight: 500;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.addPricing {
+  width: 85%;
+  font-size: 20px;
+}
+
+.totalContainer {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #333;
+  padding: 15px 0 55px 0;
+}
+
+.fullTotal {
+  font-size: 20px;
+}
+
+.addTitle {
+  font-size: 25px;
+}
+
+.totalTitle {
+  font-size: 25px;
+}
+
+.removeBtn {
+  color: gray;
+  font-weight: 300;
+}
+
+.orderBtn {
+  border: none;
+  width: 85%;
+  padding: 18px;
+  background-color: rgb(100, 161, 100);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  cursor: pointer;
 }
